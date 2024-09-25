@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get fresh, authentic idli and dosa batter delivered right to your door. Our traditional batters are made with quality ingredients and time-honored recipes, ensuring delicious and convenient meals. Order now for quick delivery!">
-    <title>BatterMami - Navbar</title>
+    <title>BatterMami</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/BatterMamiLogoNew.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Custom Sticky CSS */
-        .sticky-navbar {
-            position: -webkit-sticky; /* For Safari */
-            position: sticky;
-            top: 0;
-            z-index: 1020;
-        }
+    
 
         /* Custom Logo Size and Position */
         .navbar-brand {
@@ -26,7 +22,7 @@
             width: 70px;  /* Set logo width */
             height: 110px; /* Set logo height */
             object-fit: cover; /* Ensures the logo doesn't distort */
-            position: absolute;
+            position: absolute; /* overiding the bar*/
             top: -50px; /* Adjust the logo to sit above the navbar */
         }
 
@@ -34,6 +30,28 @@
         .navbar-nav {
             padding-left: 20px;
         }
+        
+        .navbar-nav .nav-link, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+/* Ensure even spacing */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* This ensures that the nav links take up the full space */
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Adjust margin as needed */
+}
+.navbar-nav .btn-warning {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold for emphasis */
+}
+
+
     </style>
 </head>
 <body>
@@ -130,7 +148,7 @@
                 <li class="text grow-turn"><strong>Small Batches for Big Flavor:</strong> We avoid mass production. Each batch of batter is handcrafted in small quantities to maintain the integrity of our traditional recipes.</li>
                 <li class="text grow-turn"><strong>Focus on Heritage Recipes:</strong> We use age-old fermentation techniques and carefully sourced ingredients, ensuring that you experience the same taste that’s been loved for generations.</li>
             </ul>
-            <h2>Eco-Friendly Packaging 🌏</h2>
+            <h2>Eco-Friendly Packaging 🌏</h2><hr>
             <p>
                 At Battermami, we believe in taking care of both our customers and the planet. That’s why all our products are packaged using sustainable, eco-friendly materials. Our packaging is designed to reduce waste and minimize environmental impact, ensuring that you enjoy our traditional batters while making a conscious choice for the environment.
             </p>
